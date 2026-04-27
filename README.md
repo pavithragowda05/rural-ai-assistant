@@ -1,17 +1,20 @@
-# rural_ai_assistant
+# Rural AI Assistant
 
-A new Flutter project.
+A simple Flutter app that uses voice to give basic farming advice and government scheme information.
 
-## Getting Started
+## Features
+- Voice input
+- Voice output
+- Simple responses
 
-This project is a starting point for a Flutter application.
+## Tech
+- Flutter
+- speech_to_text
+- flutter_tts
 
-A few resources to get you started if this is your first Flutter project:
+## Run
+flutter pub get  
+flutter run
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Author
+Pavi
