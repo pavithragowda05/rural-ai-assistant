@@ -48,11 +48,37 @@ class _VoiceScreenState extends State<VoiceScreen> {
   }
 
   void speakResponse(String input) async {
-    String response = "You said: $input";
-    setState(() => text = response);
+  String response = "";
 
-    await tts.speak(response);
+  input = input.toLowerCase();
+
+  if (input.contains("farmer")) {
+    response =
+        "You are eligible for PM Kisan scheme. You can receive financial support from the government.";
+  } 
+  else if (input.contains("job")) {
+    response =
+        "You can apply for MGNREGA for rural employment opportunities.";
+  } 
+  else if (input.contains("crop")) {
+    response =
+        "Based on the season, you can grow rice, millets, or maize.";
+  } 
+  else if (input.contains("pest")) {
+    response =
+        "Use organic pesticides and monitor crop health regularly.";
+  } 
+  else {
+    response =
+        "Sorry, I can help with farming advice and government schemes.";
   }
+
+  setState(() {
+    text = response;
+  });
+
+  await tts.speak(response);
+}
 
   @override
   Widget build(BuildContext context) {
